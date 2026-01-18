@@ -481,14 +481,19 @@ void menu_main() {
 
 void preheat_pla()
 {
-	 queue.inject_P(PSTR("M140 S60\nM104 S190"));
+	 queue.inject_P(PSTR("M140 I0\nM104 I0"));
    ui.return_to_status();
 }
 
-void preheat_ABS()
+void preheat_PETG()
 {
-		queue.inject_P(PSTR("M140 S80\nM104 S240"));
+		queue.inject_P(PSTR("M140 I1\nM104 I1"));
    	ui.return_to_status();
+}
+
+void preheat_abs() {
+  queue.inject_P(PSTR("M140 I2\nM104 I2"));
+  ui.return_to_status();
 }
 
 //xtern _filament_cmd_t filament_cmd;
@@ -504,7 +509,8 @@ void preheat_ABS()
 //*********************‘§»»***************************************
   
 	SUBMENU(MSG_PREHEAT_PLA,preheat_pla);
-	SUBMENU(MSG_PREHEAT_ABS,preheat_ABS);
+	SUBMENU(MSG_PREHEAT_PETG,preheat_PETG);
+	SUBMENU(MSG_PREHEAT_ABS,preheat_abs);
 	
 //  #if PREHEAT_COUNT
 //    //
