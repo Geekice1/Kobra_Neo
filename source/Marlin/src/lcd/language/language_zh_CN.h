@@ -331,6 +331,7 @@ namespace Language_zh_CN {
   LSTR MSG_TEMPERATURE                    = _UxGT("温度");     // "Temperature"
   LSTR MSG_PREHEAT_PLA				      			= _UxGT("预热PLA");     // "Temperature"
   LSTR MSG_PREHEAT_ABS				      			= _UxGT("预热ABS");     // "Temperature"
+  LSTR MSG_PREHEAT_PETG				      			= _UxGT("预热PETG");     // "Temperature"	
   LSTR MSG_MOTION                         = _UxGT("电机移动");     // "Motion"
   LSTR MSG_FILAMENT                       = _UxGT("耗材");     // "Filament" menu_advanced_filament
   LSTR MSG_VOLUMETRIC_ENABLED             = _UxGT("E in mm") SUPERSCRIPT_THREE;     // "E in mm3" volumetric_enabled
